@@ -1,21 +1,33 @@
 # geek-bash/fish
 
 ## bash
-* Bash config file:  
+* Bash config file:
     `~/.bashrc`
+
+## all installed shell
+    ```
+    $ cat /etc/shells
+    /bin/sh
+    /bin/bash
+    /bin/rbash
+    /bin/dash
+    /usr/bin/fish
+    ```
+## change default shell
+    `$ chsh -s /usr/bin/fish`
 
 ## fish
 
-* Install `fish`  
-    * Ubuntu or Debian:  
+* Install `fish`
+    * Ubuntu or Debian:
     `$ sudo apt-get install fish`
-    * Mac:  
+    * Mac:
     `$ brew install fish`
 
-* Fish config file:  
-    * From file:  
+* Fish config file:
+    * From file:
     `~/.config/fish/config.fish`
-    * From web:  
+    * From web:
     `$ fish_config`
 
 * In stall `Oh My Fish`
@@ -30,7 +42,7 @@
     ```
 * Fish grammar
 
-    * if语句。 
+    * if语句。
         ```
         if grep fish /etc/shells
             echo Found fish
@@ -54,15 +66,15 @@
             echo Hi, stranger!
         end
         ```
-    
-    * while循环。 
+
+    * while循环。
 
         ```
         while true
             echo "Loop forever"
         end
         ```
-        
+
     * for循环。
         ```
         for file in *.txt
@@ -70,7 +82,7 @@
         end
         ```
 
-    * 函数  
+    * 函数
         Fish 的函数用来封装命令，或者为现有的命令起别名。
         ```
         function ll
@@ -87,7 +99,7 @@
         ```
         上面的代码重新定义ls命令。注意，函数体内的ls之前，要加上command，否则会因为无限循环而报错。
 
-    * 提示符  
+    * 提示符
         fish_prompt函数用于定义命令行提示符（prompt）。
         ```
         function fish_prompt
@@ -101,6 +113,6 @@
         执行上面的函数以后，你的命令行提示符就会变成下面这样。
         ```
         02/06/13
-        /home/tutorial > 
+        /home/tutorial >
         ```
 
