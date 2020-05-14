@@ -16,6 +16,18 @@
 ## change default shell
     `$ chsh -s /usr/bin/fish`
 
+## zsh
+
+* Install `homebrew`
+    `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+* Install `wget`
+    `brew install wget`
+* Install `oh-my-zsh`
+    `wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh`
+* Install `zsh-autosuggestions` 自动补全插件
+    `git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+
+
 ## fish
 
 * Install `fish`
